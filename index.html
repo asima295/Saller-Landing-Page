@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OasisMart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>OasisMart</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <div class="product" onclick="openModal('Product 1', 'Description of Product 1', 'product1.jpg')">
+                <img src="download (39).jpeg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$10.00</p>
+            </div>
+            <div class="product" onclick="openModal('Product 2', 'Description of Product 2', 'product2.jpg')">
+                <img src="download (40).jpeg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$15.00</p>
+            </div>
+            <div class="product" onclick="openModal('Product 3', 'Description of Product 3', 'product3.jpg')">
+                <img src="download (41).jpeg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$20.00</p>
+            </div>
+        </div>
+    </main>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <img id="modalImage" src="" alt="">
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 OasisMart. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
